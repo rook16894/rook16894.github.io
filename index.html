@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>页面标题</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	
+	body {color:white;}
+* {
+    box-sizing: border-box;
+}
+
+/* body 样式 */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* 标题 */
+.header {
+    padding: 80px;
+    text-align: center;
+    background-image: url(paper.jpg);
+    color: white;
+}
+
+/* 标题字体加大 */
+.header h1 {
+    font-size: 40px;
+}
+
+/* 导航 */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* 导航栏样式 */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* 右侧链接*/
+.navbar a.right {
+    float: right;
+}
+
+/* 鼠标移动到链接的颜色 */
+.navbar a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* 列容器 */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* 创建两个列 */
+/* 边栏 */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #222;
+    padding: 20px;
+}
+
+/* 主要的内容区域 */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: #444;
+    padding: 20px;
+}
+
+/* 测试图片 */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* 底部 */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #000;
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+	
+	img {
+    max-width: 100%;
+    height: auto;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>rook16894 studio</h1>
+  <p>做点有趣的</p>
+</div>
+
+<div class="navbar">
+  <a href="game.html">小游戏</a>
+  <a href="composition.html">文章</a>
+  <a href="me.html">友情链接</a>
+  <a href="index.html" class="right">首页</a>
+</div>
+
+<div class="row">
+  <div class="side">
+      <h2>rook16894</h2>
+      <h5>不著名的开发者</h5>
+      <img src="rook16894.png" alt="rook16894">
+      <p>不怎么著名的开发者。致力于网页开发。喜欢吃三文鱼和刨冰。和平主义者和自由主义者。不喜欢与人相争。</p>
+      <h3>更多内容</h3>
+      <p>我的更多内容</p>
+      <div class="fakeimg" style="height:60px;"><a href="#" style="color:white">###</a></div><br>
+      <div class="fakeimg" style="height:60px;"><a href="#" style="color:white">###</a></div><br>
+      <div class="fakeimg" style="height:60px;"><a href="#" style="color:white">###</a></div>
+  </div>
+  <div class="main">
+      <h2>欢迎来到rook16894的博客！</h2>
+      <h5>>>></h5>
+      <img src="image.jpg" alt="rook16894">
+      <p>等等...你是怎么来的！？？</p>
+      <p>我猜你一定和这个网站有些缘分！我正在做一些有趣的东西！</p><br>
+	  <p>你可能有过这种情况：没有感兴趣的事物；在生活中遇到困难；被欺负或针对；没有自己的目标和梦想...</p><br>
+	  <p>没关系！rook16894统统帮你解决！<p><br>
+	  <p>我喜欢新鲜事物，为人善良，喜欢用乐观的眼光去看待一切！我相信只要怀揣着一颗炽热的心，就一定能发现这个世界的美好！</p><br>
+	  <p>我坚信，好人一定会被爱着。</p><br>
+	  <p>我爱着你。这个世界也爱着你。</p><br>
+      <br>
+      <h2>联系方式</h2>
+      <h5>邮箱</h5>
+      <div class="fakeimg" style="height:200px;">###</div>
+      <p>你可以通过下面的邮箱地址联系我：</p>
+      <p><button style="background-color:#222222"><a href="mailto:rook16894@gmail.com" style="color:orange">点我反馈！</a></button></p>
+  </div>
+</div>
+
+<div class="footer">
+  <h6>我认为有良心的人不会抄我的文案。</h6><br>
+	<h6>rook16894</h6>
+</div>
+
+</body>
+</html>
